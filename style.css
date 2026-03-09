@@ -15,6 +15,9 @@
   --shadow-card: 0 10px 30px rgba(46, 42, 37, 0.1);
   --radius: 22px;
 }
+.panel h2 {
+  font-size: clamp(2rem,3vw,2.5rem);
+}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }

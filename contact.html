@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header">
     <nav class="nav container">
       <a class="brand" href="index.html">Maison Café</a>
@@ -25,22 +26,28 @@
   <main class="page-main container reveal">
     <h1 class="page-title">Contact</h1>
     <div class="split">
-      <div class="panel">
+      <div class="location-card">
         <h2>Let’s Brew Something Together</h2>
-        <p>Email: <a href="mailto:hello@sliubar.com">hello@sliubar.com</a></p>
+        <p>Email: <a href="mailto:sara@sliubar.com">sara@sliubar.com</a></p>
         <p>Website: <a href="https://sliubar.com" target="_blank" rel="noopener">sliubar.com</a></p>
         <p>For reservations, private events, and collaborations, send us a message and our team will respond shortly.</p>
       </div>
 
       <form class="contact-form" action="#" method="post">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
+        <div class="field">
+          <input id="name" name="name" type="text" placeholder=" " required>
+          <label for="name">Name</label>
+        </div>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+        <div class="field">
+          <input id="email" name="email" type="email" placeholder=" " required>
+          <label for="email">Email</label>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="field">
+          <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="message">Message</label>
+        </div>
 
         <button class="btn" type="submit">Send Message</button>
       </form>

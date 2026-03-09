@@ -6,7 +6,7 @@
   <title>Maison Café | Artisan Coffee & Brunch</title>
   <meta name="description" content="Maison Café in Dubai Marina serving artisan coffee and all-day brunch in a premium modern setting." />
   <link rel="icon" type="image/png" href="images/cafe.favicon.png" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
@@ -24,7 +24,7 @@
   </header>
 
   <main>
-    <section class="hero reveal" style="--hero-image: url('images/cafe-space.jpg');">
+    <section class="hero reveal parallax-item" style="--hero-image: url('images/cafe-space.jpg');">
       <div class="hero-overlay"></div>
       <div class="hero-content container">
         <p class="eyebrow">Maison Café</p>
@@ -35,47 +35,45 @@
     </section>
 
     <section class="section container reveal">
-      <div class="split">
-        <div>
-          <h2>Crafted with Intention</h2>
-          <p>From expertly pulled espresso to vibrant brunch plates, every detail at Maison Café is curated to create a calm, luxurious experience in the heart of Dubai.</p>
-          <a class="text-link" href="about.html">Discover our story →</a>
-        </div>
-        <img src="images/barista.jpg" alt="Barista preparing artisan coffee" class="rounded shadow" />
+      <div class="panel">
+        <h2>Our Coffee Philosophy</h2>
+        <p>
+          We source ethically grown beans and roast them in small batches to deliver balance, clarity, and warmth in every cup.
+        </p>
       </div>
     </section>
 
-    <section class="section muted reveal">
-      <div class="container">
-        <h2>Signature Favorites</h2>
-        <div class="card-grid three">
-          <article class="menu-card">
-            <img src="images/latte.png" alt="Latte" />
-            <div class="card-content"><h3>Latte</h3><p>18 AED</p></div>
-          </article>
-          <article class="menu-card">
-            <img src="images/mocha.png" alt="Mocha" />
-            <div class="card-content"><h3>Mocha</h3><p>20 AED</p></div>
-          </article>
-          <article class="menu-card">
-            <img src="images/eggs_benedict.png" alt="Eggs Benedict" />
-            <div class="card-content"><h3>Eggs Benedict</h3><p>45 AED</p></div>
-          </article>
+    <section class="section container reveal">
+      <div class="split">
+        <div class="panel">
+          <h2>Slow mornings, intentional coffee, and a warm table.</h2>
+          <p>Maison Café is built around everyday rituals—carefully sourced beans, refined brunch plates, and a calm atmosphere designed for conversation.</p>
+          <a class="text-link" href="about.html">Discover our story →</a>
         </div>
+        <figure class="image-frame"><img src="images/barista.jpg" alt="Barista preparing artisan coffee" /></figure>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="feature-grid">
+        <article class="feature-item">
+          <h3>Specialty Coffee</h3>
+          <p>Balanced espresso, silky milk, and handcrafted pours made with precision.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Brunch Kitchen</h3>
+          <p>Seasonal ingredients and comforting classics with a contemporary touch.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Calm Interiors</h3>
+          <p>Soft textures, warm light, and a space designed for slow, beautiful moments.</p>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <h3>Maison Café</h3>
-      <p>Artisan Coffee &amp; Brunch</p>
-      <p>© 2026 Maison Café</p>
-      <p>Built by Sliubar</p>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container"><h3>Maison Café</h3><p>Artisan Coffee &amp; Brunch</p><p>© 2026 Maison Café</p><p>Built by Sliubar</p></div></footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-

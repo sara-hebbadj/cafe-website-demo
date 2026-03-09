@@ -43,23 +43,31 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal, .reveal-stagger').forEach((el) => observer.observe(el));
 
 const parallaxItems = document.querySelectorAll('.parallax-item');
+
 const handleParallax = () => {
-  const scrollY = window.scrollY;
+  const y = window.scrollY;
+
   parallaxItems.forEach((item) => {
-    const speed = item.classList.contains('hero') ? 0.18 : 0.08;
-    item.style.transform = `translate3d(0, ${scrollY * speed}px, 0)`;
+    if (item.classList.contains('hero')) {
+      item.style.backgroundPositionY = `calc(50% + ${y * 0.1}px)`;
+    } else {
+      item.style.transform = `translate3d(0, ${y * 0.03}px, 0)`;
+    }
   });
 };
 
 window.addEventListener('scroll', handleParallax, { passive: true });
 
+
 // smooth scroll for same-page anchor links
-[...document.querySelectorAll('a[href^="#"]')].forEach((link) => {
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener('click', (e) => {
     const id = link.getAttribute('href');
     if (!id || id === '#') return;
+
     const target = document.querySelector(id);
     if (!target) return;
+
     e.preventDefault();
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
